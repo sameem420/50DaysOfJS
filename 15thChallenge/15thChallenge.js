@@ -1,30 +1,19 @@
-const earthSeconds = 31556926;
-const getAge = (planet, seconds) => {
-  return Number((seconds / (earthSeconds * planet)).toFixed(2));
-};
+function hey(message) {
+  let bobResponse = "";
+  if (message === "How are you?") {
+    bobResponse = "Sure.";
+  } else if (message === "YELL") {
+    bobResponse = "Whoa, chill out!";
+  } else if (message === "YELL???") {
+    bobResponse = "Calm down, I know what I'm doing!";
+  } else if (message === "") {
+    bobResponse = "Fine.";
+  } else if (message === "") {
+    bobResponse = "Fine. Be that way!";
+  } else {
+    bobResponse = "Whatever.";
+  }
+  return bobResponse;
+}
 
-const spaceAge = (seconds) => {
-  const yearsInAllPlanets = {
-    Mercury: 0.2408467,
-    Venus: 0.61519726,
-    Earth: 1,
-    Mars: 1.8808158,
-    Jupiter: 11.862615,
-    Saturn: 29.447498,
-    Uranus: 84.016846,
-    Neptune: 164.79132,
-  };
-
-  yearsInAllPlanets["Mercury"] = getAge(yearsInAllPlanets.Mercury, seconds);
-  yearsInAllPlanets["Venus"] = getAge(yearsInAllPlanets.Venus, seconds);
-  yearsInAllPlanets["Earth"] = getAge(yearsInAllPlanets.Earth, seconds);
-  yearsInAllPlanets["Mars"] = getAge(yearsInAllPlanets.Mars, seconds);
-  yearsInAllPlanets["Jupiter"] = getAge(yearsInAllPlanets.Jupiter, seconds);
-  yearsInAllPlanets["Saturn"] = getAge(yearsInAllPlanets.Saturn, seconds);
-  yearsInAllPlanets["Uranus"] = getAge(yearsInAllPlanets.Uranus, seconds);
-  yearsInAllPlanets["Neptune"] = getAge(yearsInAllPlanets.Neptune, seconds);
-
-  return yearsInAllPlanets;
-};
-
-console.log(spaceAge(Math.round(26596272)));
+console.log(hey("How are you?"));
