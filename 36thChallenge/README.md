@@ -1,8 +1,25 @@
-# Write a program to find the most frequent item of an array
+# Rna Transcription
+
+## Instructions
+
+### Given a DNA strand, return its RNA complement (per RNA transcription).
+
+## Both DNA and RNA strands are a sequence of nucleotides.
+
+- ### The four nucleotides found in DNA are adenine (A), cytosine (C), guanine (G) and thymine (T).
+
+- ### The four nucleotides found in RNA are adenine (A), cytosine (C), guanine (G) and uracil (U).
+
+## Given a DNA strand, its transcribed RNA strand is formed by replacing each nucleotide with its complement:
+
+- ### G -> C
+- ### C -> G
+- ### T -> A
+- ### A -> U
 
 # TEST CASES
 
-| TEST                                                        | RESULT      |
-| ----------------------------------------------------------- | ----------- |
-| mostFreq([1, 2, 2, 4, 5, 6, 6])                             | returns 2 2 |
-| mostFreq([3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]) | returns a 5 |
+| TEST                  | RESULT               |
+| --------------------- | -------------------- |
+| transcription('GCT')  | should return 'CGA'  |
+| transcription('GATC') | should return 'CUAG' |
