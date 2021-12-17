@@ -1,8 +1,18 @@
-# Write a program to find the most frequent item of an array
+# Tell if its a leap year
+
+## Instructions
+
+### Given a year, report if it is a leap year.
+
+### The tricky thing here is that a leap year in the Gregorian calendar occurs:
+
+- ### on every year that is evenly divisible by 4 except every year that is evenly divisible by 100 unless the year is also evenly divisible by 400
+
+- ### For example, 1997 is not a leap year, but 1996 is. 1900 is not a leap year, but 2000 is.
 
 # TEST CASES
 
-| TEST                                                        | RESULT      |
-| ----------------------------------------------------------- | ----------- |
-| mostFreq([1, 2, 2, 4, 5, 6, 6])                             | returns 2 2 |
-| mostFreq([3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]) | returns a 5 |
+| TEST         | RESULT              |
+| ------------ | ------------------- |
+| isLeap(2022) | should return false |
+| isLeap(2020) | should return true  |
