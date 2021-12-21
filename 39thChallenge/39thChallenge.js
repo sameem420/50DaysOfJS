@@ -7,6 +7,8 @@ const flavours = {
   Others: 2.5,
 };
 
+"str".slice
+
 const Limes = {
   small: 6,
   medium: 8,
